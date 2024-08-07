@@ -12,9 +12,18 @@ class _MiportafolioflutterState extends State<Miportafolioflutter> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        shadowColor: Colors.blue,
+        backgroundColor: Colors.blue,
         title: Text('Curriculum'),
       ),
+      body: Column(
+        children: [texto()],
+      ),
+    );
+  }
+
+  Widget texto() {
+    return Column(
+      children: [Text('hola este es mi curriculom')],
     );
   }
 }
